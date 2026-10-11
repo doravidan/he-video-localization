@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://doravidan.github.io/he-video-localization/sitemap.xml

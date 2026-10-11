@@ -32,3 +32,8 @@ input:focus,select:focus{outline:2px solid var(--brand);border-color:transparent
 footer{border-top:1px solid var(--line);padding:26px 0;font-size:14px}
 @media (max-width:640px){nav a{display:none}section{padding:52px 0}}
 .pay{display:block;text-align:center;padding:10px 18px;border:1.5px solid var(--line);border-radius:999px;background:#fff;color:var(--brand);font-weight:600;font-size:15px;text-decoration:none;min-height:44px}.pay:hover{border-color:var(--brand)}.pay:focus-visible{outline:2px solid var(--brand);outline-offset:2px}.pay.inline{display:inline-block;margin-inline-end:6px}.pay-note{margin:0;text-align:center}
+video{height:auto;aspect-ratio:16/9}
+.signup{display:grid;gap:6px;margin:18px 0 0;max-width:520px;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.signup label{font-weight:500;font-size:15px;color:var(--muted)}
+.su-row{display:flex;gap:8px;flex-wrap:wrap}.su-row input{flex:1 1 200px;min-width:0}.su-row .btn{padding:9px 18px;min-height:44px}
+.su-msg{margin:0;font-size:14px;min-height:0}
