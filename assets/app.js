@@ -52,7 +52,7 @@
     d.append('site','Kolot'); d.append('lang',l); d.append('page',location.href); d.append('source',q.get('utm_source')||q.get('ref')||document.referrer||'direct');
     gcEvent('kolot-signup-submit','Kolot email signup submit'); btn.disabled=true;
     function fail(){ btn.disabled=false; sm.textContent=sm.getAttribute('data-err-'+l); var a=document.createElement('a'); a.href='mailto:'+TO+'?subject='+encodeURIComponent('Kolot signup')+'&body='+encodeURIComponent('Please add me: '+sf.email.value); a.textContent=TO; a.dir='ltr'; sm.appendChild(a); }
-    fetch('https://formsubmit.co/ajax/'+TO,{method:'POST',body:d,headers:{'Accept':'application/json'}}).then(function(r){return r.json();}).then(function(j){
+    fetch('https://formsubmit.co/ajax/164487d071c2e91e2633ec878e59bce4',{method:'POST',body:d,headers:{'Accept':'application/json'}}).then(function(r){return r.json();}).then(function(j){
       if(String(j.success)==='true'){ sm.textContent=sm.getAttribute('data-ok-'+l); sf.reset(); btn.disabled=false; gcEvent('kolot-signup-ok','Kolot email signup confirmed'); } else fail();
     }).catch(fail);
   });
